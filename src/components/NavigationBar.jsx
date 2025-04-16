@@ -38,13 +38,13 @@ const NavigationBar = ({isLoggedIn}) => {
       </div>
       
       <NavbarCollapse>
-        <NavbarLink href="/" className="text-amber-950 hover:!text-[#009F18] font-medium"> 
+        <NavbarLink onClick={() => navigate("/")} className="text-amber-950 hover:!text-[#009F18] font-medium"> 
           Home
         </NavbarLink>
-        <NavbarLink href="/challenges" className="text-amber-950 hover:!text-[#009F18] font-medium">Challenge</NavbarLink>        
-        <NavbarLink href="/uploadimage" className="text-amber-950 hover:!text-[#009F18] font-medium">Upload Sampah</NavbarLink>
-        <NavbarLink href="/education" className="text-amber-950 hover:!text-[#009F18] font-medium">Interactive Education</NavbarLink>
-        <NavbarLink href="/dashboardpoint" className="text-amber-950 hover:!text-[#009F18] font-medium">Dashboard Point</NavbarLink>
+        <NavbarLink onClick={() => navigate("/challenges")} className="text-amber-950 hover:!text-[#009F18] font-medium">Challenge</NavbarLink>        
+        <NavbarLink onClick={() => navigate("/uploadimage")} className="text-amber-950 hover:!text-[#009F18] font-medium">Upload Sampah</NavbarLink>
+        <NavbarLink onClick={() => navigate("/education")} className="text-amber-950 hover:!text-[#009F18] font-medium">Interactive Education</NavbarLink>
+        <NavbarLink onClick={() => navigate("/dashboardpoint")} className="text-amber-950 hover:!text-[#009F18] font-medium">Dashboard Point</NavbarLink>
       </NavbarCollapse>
     </Navbar>
     
